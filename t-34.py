@@ -41,6 +41,7 @@ async def check_time():
                 await channel.send("С Днём Победы! Помним, чтим, гордимся!", file=discord.File(GREETING_IMAGE_PATH2))
                 has_sent_main_greeting = True
 
+    if now.month == 5 and now.day == 9:       
         # каждый час — музыка
         if now.minute == 0:
             voice_channel = bot.get_channel(VOICE_CHANNEL_ID)
